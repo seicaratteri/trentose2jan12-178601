@@ -19,7 +19,7 @@ function getArea(arr)
                     ret = x*y;
             }
         }
-    }
+    }   
 
     return ret;
 }
