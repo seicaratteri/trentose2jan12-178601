@@ -6,15 +6,18 @@ const area = express.Router()
 function getArea(arr)
 {
     let ret = -1;
-    if (arr.length == 2)
+    if (typeof arr != 'undefined')
     {
-        let x = arr[0];
-        let y = arr[1];
-
-        if (!isNaN(x) && !isNaN(y))
+        if (arr.length == 2)
         {
-            if (x >= 0 && y >= 0)
-                ret = x*y;
+            let x = arr[0];
+            let y = arr[1];
+
+            if (Number.isInteger(x) && Number.isInteger(y))
+            {
+                if (x >= 0 && y >= 0)
+                    ret = x*y;
+            }
         }
     }
 
@@ -22,7 +25,7 @@ function getArea(arr)
 }
 
 area.get('/getArea', function (req, res) {
-    let c = getArea([req.query.side1,req.query.side2]);
+    let c = getArea([parseInt(req.query.side1),parseInt(req.query.side2)]);
     let ret = {area:c};
 
     if (c === -1)
