@@ -1,0 +1,30 @@
+{
+  "name": "trentose2jan12-178601",
+  "version": "1.0.0",
+  "description": "Pietro Bolcato - 178601",
+  "main": "area.js",
+  "dependencies": {
+    "jest": "^22.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/area.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seicaratteri/trentose2jan12-178601.git"
+  },
+  "author": "Pietro Bolcato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seicaratteri/trentose2jan12-178601/issues"
+  },
+  "homepage": "https://github.com/seicaratteri/trentose2jan12-178601#readme"
+}
