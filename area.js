@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express'),
     bodyParser = require('body-parser');
 const area = express.Router()
@@ -5,7 +6,8 @@ const area = express.Router()
 
 function getArea(arr)
 {
-    let ret = -1;
+	let ret = -1;
+
     if (typeof arr != 'undefined')
     {
         if (arr.length == 2)
@@ -19,6 +21,7 @@ function getArea(arr)
                     ret = x*y;
             }
         }
+
     }   
 
     return ret;
@@ -35,3 +38,11 @@ area.get('/getArea', function (req, res) {
 })
 
 module.exports = area
+=======
+    }	
+
+	return ret;
+}
+
+module.exports = getArea;
+>>>>>>> R1
